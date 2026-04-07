@@ -76,7 +76,7 @@ export const handler: Handler = async (event: HandlerEvent) => {
   // 시스템 프롬프트 + 유저 메시지를 하나로 합쳐 전송 (v1 호환)
   const userMessage = `${systemPrompt}\n\n다음 내용을 바탕으로 ${TASK_LABELS[body.taskType]}을(를) 작성해주세요:\n\n${body.content}`;
 
-  const MODEL = 'gemini-1.5-flash';
+  const MODEL = 'gemini-2.0-flash';
   const url = `https://generativelanguage.googleapis.com/v1/models/${MODEL}:generateContent?key=${apiKey}`;
 
   try {
