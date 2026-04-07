@@ -58,7 +58,7 @@ const ApiKeySetup: FC<ApiKeySetupProps> = ({ onSave, onValidate, isOpen }) => {
               <h2 className="text-2xl font-bold text-gray-800">Gemini API 키 설정</h2>
               <p className="text-gray-500 text-sm mt-2">
                 Google AI Studio에서 발급받은 API 키를 입력해주세요.
-                <br />키는 내 기기에만 안전하게 저장됩니다.
+                <br />키는 내 기기 브라우저에만 안전하게 저장됩니다.
               </p>
             </div>
 
@@ -72,7 +72,7 @@ const ApiKeySetup: FC<ApiKeySetupProps> = ({ onSave, onValidate, isOpen }) => {
                 }}
                 onKeyDown={(e) => e.key === 'Enter' && handleSave()}
                 placeholder="AIza..."
-                className="w-full border-2 border-lavender-200 rounded-xl px-4 py-3 pr-12 text-gray-700 focus:outline-none focus:border-lavender-400 transition-colors"
+                className="w-full border-2 border-blue-200 rounded-xl px-4 py-3 pr-12 text-gray-700 focus:outline-none focus:border-blue-400 transition-colors"
               />
               <button
                 type="button"
@@ -106,7 +106,7 @@ const ApiKeySetup: FC<ApiKeySetupProps> = ({ onSave, onValidate, isOpen }) => {
             <motion.button
               onClick={handleSave}
               disabled={!inputKey.trim() || isValidating}
-              className="w-full bg-gradient-to-r from-purple-400 to-teal-400 text-white font-bold py-3 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-bold py-3 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
