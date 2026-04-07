@@ -1,6 +1,11 @@
 export const APP_CONFIG = {
-  name: "직장인 AI 업무 자동화",
-  version: "1.0.0",
-  apiKeyStorageKey: "gemini_api_key",
-  logStorageKey: "app_logs",
+  name: '직장인 AI 업무 자동화',
+  version: '1.0.0',
+  apiKeyStorageKey: 'gemini_api_key',
+  logStorageKey: 'app_logs',
+  logging: {
+    enabled: true,
+    storageKey: 'app_logs',
+    maxEntries: 200,
+  },
 } as const;
